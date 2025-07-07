@@ -2,102 +2,110 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lara — Juriste privée</title>
-  <link rel="stylesheet" href="juriste.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <title>Karim Benamar - Chauffeur VTC Toulouse</title>
+  <link rel="stylesheet" href="karim.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body>
-  <header class="hero">
-    <div class="overlay"></div>
-    <div class="hero-content">
-      <h1 class="logo">LARA.</h1>
-      <p class="tagline">Juriste privée & conseil d'élite</p>
-      <a href="#contact" class="btn">Prendre rendez-vous</a>
+
+  <header>
+    <div class="container header-container">
+      <div class="profile-pic">
+       <!-- Ici, mettre le chemin de l'image de Karim -->
+        <!-- Si image locale : src="images/karim.jpg" -->
+        <img src="https://th.bing.com/th/id/OIP.-zh91wKLByewcAq4x6mlBwHaLG?rs=1&pid=ImgDetMain" alt="Photo de Karim Benamar" />
+      </div>
+      <div class="header-text">
+        <h1>Karim Benamar</h1>
+        <p class="subtitle">Chauffeur VTC - Opel Grandland X</p>
+      </div>
     </div>
   </header>
 
-  <nav class="main-nav">
-    <ul>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#temoignages">Témoignages</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <section class="container about">
+    <h2>À propos</h2>
+    <p>Avec plusieurs années d'expérience en tant que chauffeur VTC, Karim Benamar vous offre un service fiable, ponctuel et professionnel autour de Toulouse. Passionné par la conduite et le confort, il met un point d'honneur à rendre chaque trajet agréable et sécurisé.</p>
+  </section>
 
-  <section id="services" class="fade-in">
-    <h2>Domaines d'expertise</h2>
-    <div class="services-grid">
-      <div class="service-card">
-        <span class="icon">📜</span>
-        <h3>Droit civil</h3>
-        <p>Contrats, litiges familiaux, responsabilités juridiques.</p>
-      </div>
-      <div class="service-card">
-        <span class="icon">⚖️</span>
-        <h3>Droit commercial</h3>
-        <p>Entreprises, litiges commerciaux, conseils aux professionnels.</p>
-      </div>
-      <div class="service-card">
-        <span class="icon">📝</span>
-        <h3>Rédaction</h3>
-        <p>Contrats, CGV, documents légaux clairs et précis.</p>
-      </div>
+  <section class="container gallery">
+    <h2>Galerie</h2>
+    <div class="gallery-images">
+      <!-- Même principe : image locale dans dossier images/ -->
+      <img src="https://photos.static.alcopa-auction.net/photos/FM/FM265KF/big/OPEL_GRANDLAND_X_f96a5a5d02fbebb82363d7de.jpeg" alt="Opel Grandland X vue avant" />
+      <img src="https://th.bing.com/th/id/OIP.kVU8332SoQzoEyQQb2Yy-gHaEm?rs=1&pid=ImgDetMain" alt="Intérieur de la voiture" />
+      <img src="https://th.bing.com/th/id/R.259f008fa50095441bf4e41da3ec6458?rik=J6Pln87ks4lBdw&pid=ImgRaw&r=0" alt="Karim au volant" />
     </div>
   </section>
 
-  <section id="temoignages" class="fade-in">
-    <h2>Témoignages</h2>
-    <div class="testimonials">
-      <blockquote>
-        « Une professionnelle d’une grande écoute, claire et réactive. »
-        <span>— M. Dupuis</span>
-      </blockquote>
-      <blockquote>
-        « Grâce à Lara, j’ai pu résoudre un conflit délicat sans aller au tribunal. »
-        <span>— A. Rahmani</span>
-      </blockquote>
+  <section class="container testimonials">
+    <h2>Avis clients</h2>
+    <div class="testimonial-item">
+      <p>"Karim est toujours à l'heure et très professionnel. Je recommande !" – Sophie L.</p>
+    </div>
+    <div class="testimonial-item">
+      <p>"Voyager avec Karim est un vrai plaisir, voiture confortable et conduite sûre." – Marc D.</p>
+    </div>
+    <div class="testimonial-item">
+      <p>"Service impeccable et très disponible, merci beaucoup !" – Amina K.</p>
     </div>
   </section>
 
-  <section id="contact" class="fade-in">
-    <h2>Contact</h2>
-    <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
+  <section class="container map-faq">
+    <div class="map-container">
+      <h2>Zone de service</h2>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.9551236980226!2d1.411051315499698!3d43.60446277912107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebb0e99a953e9%3A0xb3a7e6f9e95e50d8!2sToulouse!5e0!3m2!1sfr!2sfr!4v1685463720000!5m2!1sfr!2sfr" 
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="faq-container">
+      <h2>FAQ</h2>
+      <details>
+        <summary>Comment réserver une course ?</summary>
+        <p>Vous pouvez réserver via Uber ou en utilisant le formulaire de réservation sur ce site.</p>
+      </details>
+      <details>
+        <summary>Quels sont les horaires disponibles ?</summary>
+        <p>Karim est disponible tous les jours de 7h à 22h.</p>
+      </details>
+      <details>
+        <summary>Quels types de paiement acceptez-vous ?</summary>
+        <p>Vous pouvez payer via l'application Uber ou en espèces directement à Karim.</p>
+      </details>
+      <details>
+        <summary>Que faire en cas d'annulation ?</summary>
+        <p>Merci de prévenir dès que possible pour éviter des frais.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="container cgv">
+    <h2>Conditions Générales de Vente</h2>
+    <p>Les réservations doivent être effectuées à l'avance. Toute annulation doit être signalée au moins 2 heures avant le départ. Karim Benamar ne pourra être tenu responsable des retards dus à des conditions extérieures (trafic, météo, etc.).</p>
+  </section>
+
+  <section id="reservation" class="container reservation">
+    <h2>Réservation</h2>
+    <form action="https://formspree.io/f/mayvprjk" method="POST">
       <input type="text" name="name" placeholder="Votre nom" required />
-      <input type="email" name="email" placeholder="Votre email" required />
-      <textarea name="message" placeholder="Votre message" required></textarea>
-      <button type="submit" class="btn">Envoyer</button>
+      <input type="tel" name="phone" placeholder="Votre téléphone" required />
+      <input type="text" name="pickup" placeholder="Lieu de prise en charge" required />
+      <input type="text" name="destination" placeholder="Destination" required />
+      <button type="submit" class="btn-primary">Envoyer la demande</button>
     </form>
-    <div class="contact-info">
-      <p><strong>Adresse :</strong> 123 rue Jean Burger</p>
-      <p><strong>Téléphone :</strong> 07 12 34 56 67 89</p>
-      <p><strong>Horaires :</strong> Lundi à Samedi, 9h à 17h</p>
-    </div>
   </section>
+
+  <button class="call-button" aria-label="Appeler Karim">
+    <a href="tel:+33712345678">Appeler Karim</a>
+  </button>
 
   <footer>
-    &copy; 2025 Lara – Juriste privée. Tous droits réservés.
+    <div class="container">
+      <p>Profil Uber : <a href="https://www.uber.com/fr/fr/driver/karim-benamar" target="_blank" rel="noopener noreferrer" class="uber-link">Voir sur Uber</a></p>
+
+      <p>Contact : <a href="tel:+33712345678">07 12 34 56 78</a> | Email : <a href="mailto:karim.benamar@example.com">karim.benamar@example.com</a></p>
+      <p>© 2025 Karim Benamar - Chauffeur VTC Toulouse</p>
+    </div>
   </footer>
 
-  <script>
-    // Animation au scroll
-    const faders = document.querySelectorAll('.fade-in');
-    const appearOptions = {
-      threshold: 0.1,
-      rootMargin: "0px 0px -50px 0px"
-    };
-
-    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
-      entries.forEach(entry => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add("visible");
-        observer.unobserve(entry.target);
-      });
-    }, appearOptions);
-
-    faders.forEach(fader => {
-      appearOnScroll.observe(fader);
-    });
-  </script>
 </body>
 </html>
