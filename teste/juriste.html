@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lara — Juriste privée</title>
+  <link rel="stylesheet" href="juriste.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1 class="logo">LARA.</h1>
+      <p class="tagline">Juriste privée & conseil d'élite</p>
+      <a href="#contact" class="btn">Prendre rendez-vous</a>
+    </div>
+  </header>
+
+  <nav class="main-nav">
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#temoignages">Témoignages</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="services" class="fade-in">
+    <h2>Domaines d'expertise</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <span class="icon">📜</span>
+        <h3>Droit civil</h3>
+        <p>Contrats, litiges familiaux, responsabilités juridiques.</p>
+      </div>
+      <div class="service-card">
+        <span class="icon">⚖️</span>
+        <h3>Droit commercial</h3>
+        <p>Entreprises, litiges commerciaux, conseils aux professionnels.</p>
+      </div>
+      <div class="service-card">
+        <span class="icon">📝</span>
+        <h3>Rédaction</h3>
+        <p>Contrats, CGV, documents légaux clairs et précis.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="temoignages" class="fade-in">
+    <h2>Témoignages</h2>
+    <div class="testimonials">
+      <blockquote>
+        « Une professionnelle d’une grande écoute, claire et réactive. »
+        <span>— M. Dupuis</span>
+      </blockquote>
+      <blockquote>
+        « Grâce à Lara, j’ai pu résoudre un conflit délicat sans aller au tribunal. »
+        <span>— A. Rahmani</span>
+      </blockquote>
+    </div>
+  </section>
+
+  <section id="contact" class="fade-in">
+    <h2>Contact</h2>
+    <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Votre nom" required />
+      <input type="email" name="email" placeholder="Votre email" required />
+      <textarea name="message" placeholder="Votre message" required></textarea>
+      <button type="submit" class="btn">Envoyer</button>
+    </form>
+    <div class="contact-info">
+      <p><strong>Adresse :</strong> 123 rue Jean Burger</p>
+      <p><strong>Téléphone :</strong> 07 12 34 56 67 89</p>
+      <p><strong>Horaires :</strong> Lundi à Samedi, 9h à 17h</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Lara – Juriste privée. Tous droits réservés.
+  </footer>
+
+  <script>
+    // Animation au scroll
+    const faders = document.querySelectorAll('.fade-in');
+    const appearOptions = {
+      threshold: 0.1,
+      rootMargin: "0px 0px -50px 0px"
+    };
+
+    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      });
+    }, appearOptions);
+
+    faders.forEach(fader => {
+      appearOnScroll.observe(fader);
+    });
+  </script>
+</body>
+</html>
